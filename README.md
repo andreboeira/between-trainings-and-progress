@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Between Trainings and Progress
 
-## Getting Started
+> **We have data and process.**
 
-First, run the development server:
+Between Trainings and Progress (BTP) is a sports analytics project focused on transforming training data into meaningful performance insights.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The goal is simple: go beyond showing what happened in a training session and understand **why it happened, how it connects to the training process, and whether it is contributing to long-term progress.**
+
+## Vision
+
+Athletes generate enormous amounts of data through their training.
+
+Heart rate, power, pace, cadence, elevation, distance, training load and countless other metrics can describe what happened — but data alone does not explain the process behind performance.
+
+BTP aims to connect these pieces.
+
+> **Data tells you what happened.
+> Process tells you why.
+> Progress tells you whether it mattered.**
+
+## Current Status
+
+🚧 **Early development**
+
+The project is currently being developed as an MVP, starting with Strava activity data and gradually evolving into a broader sports analytics platform.
+
+## Planned Features
+
+* [ ] Strava OAuth
+* [ ] Activity import
+* [ ] Training data storage
+* [ ] Training dashboard
+* [ ] Running analytics
+* [ ] Cycling analytics
+* [ ] Triathlon & brick analysis
+* [ ] Training load
+* [ ] Performance trends
+* [ ] Long-term progress
+* [ ] Athlete insights
+* [ ] AI-assisted training insights
+
+## Tech Stack
+
+* **Next.js**
+* **TypeScript**
+* **React**
+* **Tailwind CSS**
+* **PostgreSQL**
+* **Prisma**
+* **Strava API**
+* **Python**
+* **Google Colab**
+
+## Project Architecture
+
+The initial architecture is designed to separate the application, data storage and analytical experimentation:
+
+```text
+Strava
+  ↓
+PostgreSQL
+  ↓
+Data Pipeline
+  ↓
+Analytics
+  ↓
+BTP Web Application
+  ↓
+Performance Insights
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Python and Google Colab will be used primarily as the analytical and experimentation environment, while the Next.js application will serve as the product layer.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roadmap
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Phase 1 — Foundation
 
-## Learn More
+* [x] Create GitHub repository
+* [x] Initialize Next.js
+* [x] Configure TypeScript
+* [x] Configure Tailwind CSS
+* [ ] Configure PostgreSQL
+* [ ] Configure Prisma
 
-To learn more about Next.js, take a look at the following resources:
+### Phase 2 — Strava Integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* [ ] Strava OAuth
+* [ ] Access token management
+* [ ] Activity import
+* [ ] Activity synchronization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Phase 3 — Analytics
 
-## Deploy on Vercel
+* [ ] Feature engineering
+* [ ] Running metrics
+* [ ] Cycling metrics
+* [ ] Triathlon metrics
+* [ ] Training load
+* [ ] Performance trends
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Phase 4 — Product
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* [ ] Athlete dashboard
+* [ ] Training calendar
+* [ ] Performance visualization
+* [ ] Progress tracking
+* [ ] Athlete insights
+
+### Phase 5 — Intelligence
+
+* [ ] Automated training analysis
+* [ ] Contextual insights
+* [ ] AI-assisted interpretation
+
+## Philosophy
+
+BTP is built around a simple idea:
+
+**More data does not automatically create more understanding.**
+
+The value comes from connecting data with context, consistency and the training process.
+
+---
+
+**Between Trainings and Progress**
+*We have data and process.*
